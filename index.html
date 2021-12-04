@@ -18,7 +18,7 @@
       <h3 class='name'>Ivan Binet Sanchez<br> Sebastian Campos <br>Christian Le <br> Sidath Wijesinghe</h3> 
       
             
-      <h1>URaBOT ECE 5 Website</h1> <!-- h1 is heading 1 -->
+      <h1>ECE 5 Website</h1> <!-- h1 is heading 1 -->
     </div>
     
 <!--   *********************  HEADING END *********************   --> 
@@ -33,14 +33,7 @@
       <p1>The objective of this lab is to create a line following robot and gain a better understanding of sensors, actuators, programming, systems, and controls.  </p1> 
       
       <br><br>
-      
-      <p1>Enter image of your poster below and then delete this line line of code</p1> 
-      
-      <br><br>
-      
-      <img src = 'https://www.pm10inc.com/wp-content/themes/micron/images/placeholders/ninzio_slider_placeholder.png'>
-       
-      <br><br>
+  
 <!--   *********************  INTRO END *********************   --> 
       
 <!--   ////////////////////////////////////////////////////////////////////////////////////////////////   --> 
@@ -166,7 +159,7 @@ class='imgmar'></p2>
             <br>
             What was the best PID values that you used? How well did this track? Any limitations?
             <br><br>
-            &emsp; Answer here...
+            &emsp; The PID values that we used were Speed: 20, P: 7, I: 0.01, D: 0.45. (Update Speed: 36, P: 21, I: 0.05, D: 0.80) The limitation was that it is too slow and sometimes inconsistant.
             <br><br><br>
             What does PID stand for?  What is the purpose of the P, the I, and the D?  
             What steps did you take to choose the best values for your robot? 
@@ -186,14 +179,42 @@ class='imgmar'></p2>
       <div class="interactive" id='interactive6' style='display: none'>
         <div class='box1'>
           <br>
-          <p class='box2'>
             Insert a video of your robot in action!
-          </p> <!-- p is paragraph -->
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ENrif-XzMN8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br> <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/z0GcKHUFpwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
             <br>
+          </p> <!-- p is paragraph -->
+        </div>
+        </div> 
+  
+  
+<div class ='center'>
+        <button type='button' onclick="toggleText7()" class="btn">Final Robot</button>
+      </div> <!--end of div class center -->
+      
+      <div class="interactive" id='interactive7' style='display: none'>
+          </p>
+          <p class='box1'> 
+            <br>Annotated Robot<br><br>
+     <img src = 'https://lh3.googleusercontent.com/SVlWlZhdQrNaEYXKqvwrn8y5xyqR3NC9XdGgg4d2PsVVnx8Jpto0BeUrJ5OhbuDEJZOmsL1xp5LkMbauv1a3jIUzn8OPNiiew4qUNRYV3wrDBsaUkBE_rLN2R3hQ9v9ABXhEER_YoQ=w600' class='imgmar'>
+            <br>
+            <img src = 'https://lh3.googleusercontent.com/DGehcYL4ZR0bbUkpTxpOG-t6HqZxY2VXzy2eHbpGJ7QLe81Z9P4By4-ud1MogUIuoT9g0XTW-BeYTEirpnlC9O4vaSJfiQfRD7X1hSM07yKkRWZ1ZVkdtlJWQZ98hqaHc74CAbmWtg=w600' class='imgmar'>
+            <br><br>
+            Robot in Competiton Video <br>
+        <br>  <iframe width="560" height="315" src="https://www.youtube.com/embed/08yVhY1iEYY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br><br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yPdNz0WlGNQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <br>
+          </p>
+          
         </div> <!-- This is the end of div interactive -->
       </div> <!-- This is the end of div box1 -->
-      
+        
+  
+  
+  
+  
 <!--   *********************  BUTTONS END *********************   --> 
       
 <!--   ////////////////////////////////////////////////////////////////////////////////////////////////   --> 
@@ -262,7 +283,14 @@ class='imgmar'></p2>
         text.style.display = "none";
       }
     }
-
+    function toggleText7(text) {
+      var text = document.getElementById("interactive7");
+      if (text.style.display === "none") {
+        text.style.display = "block";
+      } else {
+        text.style.display = "none";
+      }
+    }
   </script>
 
 </html>
